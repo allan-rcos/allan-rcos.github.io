@@ -28,49 +28,57 @@
                     &#xe5d2;</button>
             </div>
 
-            <menu class="flex opacity-0 md:opacity-100 fixed top-15 left-2 bg-orange-50 dark:bg-stone-800 shadow-lg md:shadow-none md:static text-gray-700 dark:text-gray-300 md:w-full flex-col items-start md:items-center md:gap-5 transition-all duration-700">
-                <li class="fixed right-5 bottom-5 z-40 md:static h-14 w-14 rounded-xl bg-indigo-100 dark:bg-slate-700 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700 shadow-lg md:shadow-none">
+            <div class="flex flex-col items-center gap-5">
+                <p class="fixed right-5 bottom-5 z-30 md:static h-14 w-14 rounded-xl bg-indigo-100 dark:bg-slate-700 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700 shadow-lg md:shadow-none">
                     <a href="https://www.linkedin.com/in/ricardo-allan/" target="_blank"
                        class="h-full w-full flex items-center justify-center">
                         <i class="ion-social-linkedin text-3xl"></i>
                     </a>
-                </li>
-                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
-                    <button id="home-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                </p>
+                <menu class="py-4 px-2 md:px-0 md:py-0 flex h-screen md:h-auto rounded-e-3xl fixed top-0 -left-full w-9/10 bg-orange-50 dark:bg-stone-800 shadow-lg md:shadow-none md:static text-gray-700 dark:text-gray-300 md:w-full flex-col md:items-center gap-5 transition-all duration-700 z-40">
+                    <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                        <button id="return" class="h-full w-full text-center flex md:hidden items-center gap-1 w-full">
                         <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            &#xe9bd;</span>
+                        </button>
+                    </li>
+                    <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                        <button id="home-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="!text-3xl md:!text-md material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
                             &#xe88a;</span>
-                        <span class="text-xs font-medium">Home</span>
-                    </button>
-                </li>
-                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
-                    <button id="about-me-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
-                        <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            <span class="text-lg md:text-xs font-medium">Home</span>
+                        </button>
+                    </li>
+                    <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                        <button id="about-me-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="!text-3xl md:!text-md material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
                             &#xe7fd;</span>
-                        <span class="text-xs font-medium">Sobre mim</span>
-                    </button>
-                </li>
-                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
-                    <button id="skills-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
-                        <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            <span class="text-lg md:text-xs font-medium">Sobre mim</span>
+                        </button>
+                    </li>
+                    <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                        <button id="skills-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="!text-3xl md:!text-md material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
                             &#xea4a;</span>
-                        <span class="text-xs font-medium">Skills</span>
-                    </button>
-                </li>
-                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
-                    <button id="projects-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
-                        <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            <span class="text-lg md:text-xs font-medium">Skills</span>
+                        </button>
+                    </li>
+                    <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                        <button id="projects-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="!text-3xl md:!text-md material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
                             &#xe1a0;</span>
-                        <span class="text-xs font-medium">Projetos</span>
-                    </button>
-                </li>
-                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
-                    <button id="education-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                            <span class="text-lg md:text-xs font-medium">Projetos</span>
+                        </button>
+                    </li>
+                    <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                        <button id="education-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
                         <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
                             &#xe80c;</span>
-                        <span class="text-xs font-medium">Escolaridade</span>
-                    </button>
-                </li>
-            </menu>
+                            <span class="text-lg md:text-xs font-medium">Escolaridade</span>
+                        </button>
+                    </li>
+                </menu>
+            </div>
             <div>
                 <button id="theme-switch"
                         class="flex items-center justify-center p-3 mx-auto border-1 border-gray-700
