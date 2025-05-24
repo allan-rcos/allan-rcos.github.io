@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+    --animate-rise: rise 4s ease-in-out infinite;
+    @keyframes rise {
+        0%, 100% {
+            transform: translateY(-5%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+            transform: none;
+            animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
+        }
+    }
+    --animate-fade: fade 1s;
+    @keyframes fade {
+        0% {
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+}

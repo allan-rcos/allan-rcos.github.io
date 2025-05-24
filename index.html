@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/logo.webp" type="image/webp">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+        family=Parisienne&
+        family=Ubuntu+Mono&
+        family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/css/final.css">
+    <title>Állan Portfólio</title>
+    <script type="module" defer src="assets/index.js"></script>
+</head>
+<body class="font-[Ubuntu] text-gray-800 dark:text-gray-200 dark:bg-stone-900 transition-color duration-700">
+    <div class="md:flex">
+        <nav class="bg-orange-50 dark:bg-stone-800 min-w-full md:min-w-22 px-2 md:px-0 md:py-5 fixed flex
+            md:flex-col justify-between items-center min-h-18 md:min-h-screen transition-color duration-700 z-40">
+            <div class="md:hidden">
+                <button id="menu"
+                        class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300
+                        group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                    &#xe5d2;</button>
+            </div>
+
+            <menu class="flex opacity-0 md:opacity-100 fixed top-15 left-2 bg-orange-50 dark:bg-stone-800 shadow-lg md:shadow-none md:static text-gray-700 dark:text-gray-300 md:w-full flex-col items-start md:items-center md:gap-5 transition-all duration-700">
+                <li class="fixed right-5 bottom-5 z-40 md:static h-14 w-14 rounded-xl bg-indigo-100 dark:bg-slate-700 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700 shadow-lg md:shadow-none">
+                    <a href="https://www.linkedin.com/in/ricardo-allan/" target="_blank"
+                       class="h-full w-full flex items-center justify-center">
+                        <i class="ion-social-linkedin text-3xl"></i>
+                    </a>
+                </li>
+                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                    <button id="home-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            &#xe88a;</span>
+                        <span class="text-xs font-medium">Home</span>
+                    </button>
+                </li>
+                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                    <button id="about-me-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            &#xe7fd;</span>
+                        <span class="text-xs font-medium">Sobre mim</span>
+                    </button>
+                </li>
+                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                    <button id="skills-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            &#xea4a;</span>
+                        <span class="text-xs font-medium">Skills</span>
+                    </button>
+                </li>
+                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                    <button id="projects-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            &#xe1a0;</span>
+                        <span class="text-xs font-medium">Projetos</span>
+                    </button>
+                </li>
+                <li class="group hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer transition-color duration-700">
+                    <button id="education-button" class="h-full w-full text-center flex md:flex-col items-center gap-1">
+                        <span class="material-icons-outlined py-0.5 transition-property w-14 easy-in-out delay-50 duration-300 group-hover:scale-105 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-stone-700">
+                            &#xe80c;</span>
+                        <span class="text-xs font-medium">Escolaridade</span>
+                    </button>
+                </li>
+            </menu>
+            <div>
+                <button id="theme-switch"
+                        class="flex items-center justify-center p-3 mx-auto border-1 border-gray-700
+                        dark:border-gray-300 rounded-full hover:bg-orange-200/50 dark:hover:bg-stone-700 group
+                        transition-color duration-500 easy-in-out">
+                    <span class="material-icons-outlined group-hover:!font-[Material_Icons]">&#xe51c;</span></button>
+            </div>
+        </nav>
+        <div class="h-18 md:h-auto md:w-22"></div>
+        <main class="mx-2 mt-2 flex-1 space-y-20 md:space-y-32 z-0">
+            <header class="md:grid md:grid-cols-2 gap-2">
+                <div class="bg-orange-50 rounded-2xl px-15 py-20 text-xl dark:bg-stone-800 transition-color duration-700">
+                    <p class="text-xl md:text-2xl mb-1">Olá! Me chamo</p>
+                    <h1 id="name" class="text-5xl md:text-6xl font-[Parisienne] font-bold mb-1">Ricardo Állan Costa</h1>
+                    <p class="text-sm md:text-md">E sou um <strong>Desenvolvedor Full-Stack</strong>.</p>
+                    <ul class="mt-3 text-orange-200 dark:text-stone-700 flex flex-wrap items-center gap-2 transition-color duration-700">
+                        <li class="hidden md:inline">
+                            <a href="https://github.com/allan-rcos" target="_blank">
+                                <i class="ion-social-github block w-12 h-12 text-center text-2xl p-2 border-2 border-orange-100 dark:border-stone-700 rounded-full
+                                        hover:border-indigo-200 dark:hover:border-slate-700 hover:text-indigo-200 dark:hover:text-slate-700 transition-color duration-300"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5531971647160" target="_blank">
+                                <i class="ion-social-whatsapp block w-12 h-12 text-center text-2xl p-2 border-2 border-orange-100 dark:border-stone-700 rounded-full
+                                        hover:border-indigo-200 dark:hover:border-slate-700 hover:text-indigo-200 dark:hover:text-slate-700 transition-color duration-300"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/allan_ricardo" target="_blank">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                     class="w-12 inline text-4xl p-3 border-2 border-orange-100 dark:border-stone-700 rounded-full
+                                        hover:border-indigo-200 dark:hover:border-slate-700 hover:text-indigo-200 dark:hover:text-slate-700 transition-color duration-300">
+                                    <path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ricardoallancosta@hotmail.com">
+                                <i class="ion-email block w-12 h-12 text-center text-2xl p-2 border-2 border-orange-100 dark:border-stone-700 rounded-full
+                                        hover:border-indigo-200 dark:hover:border-slate-700 hover:text-indigo-200 dark:hover:text-slate-700 transition-color duration-300"></i></a>
+                        </li>
+                        <li>
+                            <a href="tel:5531971647160">
+                                <i class="ion-ios-telephone block w-12 h-12 text-center text-2xl p-2 border-2 border-orange-100 dark:border-stone-700 rounded-full
+                                        hover:border-indigo-200 dark:hover:border-slate-700 hover:text-indigo-200 dark:hover:text-slate-700 transition-color duration-300"></i></a>
+                        </li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/15pRK1XBHYeAv1EFPDzwZrAjNpoUFZ_UV/view?usp=sharing" target="_blank"
+                       class="rounded-full mt-5 px-6 py-4 font-medium text-white bg-indigo-600 dark:bg-indigo-400 hover:bg-indigo-500 inline-block transition-color duration-700">Meu Currículo</a>
+                </div>
+                <div class="bg-orange-50 dark:bg-stone-800 bg-center bg-cover rounded-2xl transition-color duration-700 h-48 md:h-auto"
+                    style="background-image: url('assets/images/cover.jpg')"></div>
+            </header>
+            <section class="mx-10 md:mx-28 flex flex-col md:flex-row items-center">
+                <!--Sobre mim-->
+                <div class="rounded-full bg-cover w-56 h-56 md:w-72 md:h-72 shadow-xl/15 bg-orange-50 dark:bg-stone-800 hover:scale-110
+                transition-all duration-500 delay-100 mx-auto"
+                style="background-image: url('assets/images/me.png')"></div>
+                <div class="flex-1 mt-10 md:ml-20 md:mt-0">
+                    <h2 id="about-me" class="text-4xl md:text-5xl font-[Parisienne] font-bold">
+                        <span class="border-b-2 border-orange-200 dark:border-stone-700 pl-1 pr-5 transition-color duration-700">Quem sou?</span>
+                    </h2>
+                    <p class="mt-5 md:text-xl font-[Ubuntu-Mono]">
+                        Apaixonado por tecnologia desde a infância, quando comecei a explorar o universo da assistência
+                        técnica com meus pais. Minha trajetória é marcada pela versatilidade e pelo desejo de construir. Comecei com a
+                        automação em Python, evoluindo para o desenvolvimento de aplicações GUI em C# e explorando
+                        a criação web com HTML e CSS. Atualmente, dedico grande parte do meu tempo ao ecossistema PHP, com forte expertise em
+                        frameworks como Laravel, Symfony e CodeIgniter. Tenho experiência no desenvolvimento de APIs
+                        robustas, sistemas CRUD completos e websites dinâmicos. Minha paixão me motiva a me desafiar e a
+                        buscar professores que guiem minha evolução.
+                    </p>
+                </div>
+            </section>
+            <section class="mx-15 md:mx-36">
+                <!--Skills-->
+                <h2 id="skills" class="text-4xl md:text-5xl font-[Parisienne] font-bold mb-10">
+                    <span class="border-b-2 border-orange-200 dark:border-stone-700 pl-1 pr-5 transition-color duration-700">Skills</span>
+                </h2>
+                <div>
+                    <ul class="flex flex-wrap gap-5">
+                        <li class="w-15 h-15 bg-[#512BD4] flex items-center justify-center rounded-full
+                                hover:opacity-80 hover:scale-110 transition-all duration-500 delay-20"
+                            title=".Net Framework">
+                            <img src="https://cdn.simpleicons.org/dotnet/white?viewbox=auto"
+                                 alt="Net Framework Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#7952B3] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Bootstrap">
+                            <img src="https://cdn.simpleicons.org/bootstrap/white?viewbox=auto"
+                                 alt="Bootstrap Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#4000BF] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Insomnia">
+                            <img src="https://cdn.simpleicons.org/insomnia/white?viewbox=auto"
+                                 alt="Insomnia Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#EF4223] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="CodeIgniter PHP Framework">
+                            <img src="https://cdn.simpleicons.org/codeigniter/white?viewbox=auto"
+                                 alt="CodeIgniter Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#663399] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Cascading Style Sheets (CSS)">
+                            <img src="https://cdn.simpleicons.org/css/white?viewbox=auto"
+                                 alt="CodeIgniter Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#A81D33] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Debian Server">
+                            <img src="https://cdn.simpleicons.org/debian/white?viewbox=auto"
+                                 alt="Debian Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#DD2C00] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Firebase Database">
+                            <img src="https://cdn.simpleicons.org/firebase/white?viewbox=auto"
+                                 alt="Firebase Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#F7DF1E] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Javascript">
+                            <img src="https://cdn.simpleicons.org/javascript/white?viewbox=auto"
+                                 alt="Javascript Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#0769AD] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="JQuery">
+                            <img src="https://cdn.simpleicons.org/jquery/white?viewbox=auto"
+                                 alt="JQuery Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#FF2D20] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Laravel PHP Framework">
+                            <img src="https://cdn.simpleicons.org/laravel/white?viewbox=auto"
+                                 alt="Laravel Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#003545] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="MariaDB SQL">
+                            <img src="https://cdn.simpleicons.org/mariadb/white?viewbox=auto"
+                                 alt="MariaDB Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#757575] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Material Design">
+                            <img src="https://cdn.simpleicons.org/materialdesign/white?viewbox=auto"
+                                 alt="MD Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#DE4F4F] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Meteor Javascript Framework">
+                            <img src="https://cdn.simpleicons.org/meteor/white?viewbox=auto"
+                                 alt="Meteor Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#47A248] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="MongoDB">
+                            <img src="https://cdn.simpleicons.org/mongodb/white?viewbox=auto"
+                                 alt="MongoDB Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#4479A1] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="MySQL">
+                            <img src="https://cdn.simpleicons.org/mysql/white?viewbox=auto"
+                                 alt="MySQL Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#5FA04E] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Node.js server">
+                            <img src="https://cdn.simpleicons.org/nodedotjs/white?viewbox=auto"
+                                 alt="NodeJS Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#013243] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="NumPy Arrays">
+                            <img src="https://cdn.simpleicons.org/numpy/white?viewbox=auto"
+                                 alt="Numpy Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#777BB4] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="PHP">
+                            <img src="https://cdn.simpleicons.org/php/white?viewbox=auto"
+                                 alt="PHP Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#000000] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="PHPStorm IDE">
+                            <img src="https://cdn.simpleicons.org/phpstorm/white?viewbox=auto"
+                                 alt="PHPStorm Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#263238] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Java Primefaces">
+                            <img src="https://cdn.simpleicons.org/primefaces/white?viewbox=auto"
+                                 alt="Primefaces Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#3776AB] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Python">
+                            <img src="https://cdn.simpleicons.org/python/white?viewbox=auto"
+                                 alt="Python Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#61DAFB] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="React Framework">
+                            <img src="https://cdn.simpleicons.org/react/white?viewbox=auto"
+                                 alt="React Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#764ABC] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Redux Framework">
+                            <img src="https://cdn.simpleicons.org/redux/white?viewbox=auto"
+                                 alt="Redux Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#77E8B9] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Stimulus Javascript Framework">
+                            <img src="https://cdn.simpleicons.org/stimulus/white?viewbox=auto"
+                                 alt="Stimulus Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#000000] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Symfony PHP Framework">
+                            <img src="https://cdn.simpleicons.org/symfony/white?viewbox=auto"
+                                 alt="Symfony Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#06B6D4] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="TailwindCss">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/white?viewbox=auto"
+                                 alt="TailwindCss Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#3178C6] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Typescript">
+                            <img src="https://cdn.simpleicons.org/typescript/white?viewbox=auto"
+                                 alt="Typescript Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#E95420] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Ubuntu">
+                            <img src="https://cdn.simpleicons.org/ubuntu/white?viewbox=auto"
+                                 alt="Ubuntu Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#646CFF] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Vite Javascript Framework">
+                            <img src="https://cdn.simpleicons.org/vite/white?viewbox=auto"
+                                 alt="Vite Logo" class="w-10 h-10"/>
+                        </li>
+                        <li class="w-15 h-15 bg-[#4FC08D] flex items-center justify-center rounded-full
+                                hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                            title="Vue.js Framework">
+                            <img src="https://cdn.simpleicons.org/vuedotjs/white?viewbox=auto"
+                                 alt="Vue Logo" class="w-10 h-10"/>
+                        </li>
+                        <!--
+                            <li class="w-15 h-15 bg-[#3DDC84] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Android">
+                                <img src="https://cdn.simpleicons.org/android/white?viewbox=auto"
+                                     alt="Android Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#003087] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="PayPal">
+                                <img src="https://cdn.simpleicons.org/paypal/white?viewbox=auto"
+                                     alt="PayPal Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#635BFF] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Stripe">
+                                <img src="https://cdn.simpleicons.org/stripe/white?viewbox=auto"
+                                     alt="Stripe Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#00599C] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="C++">
+                                <img src="https://cdn.simpleicons.org/cplusplus/white?viewbox=auto"
+                                     alt="C++ Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#D22128] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Apache Server">
+                                <img src="https://cdn.simpleicons.org/apache/white?viewbox=auto"
+                                     alt="Apache Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#5A29E4] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Axios Javascript Requests">
+                                <img src="https://cdn.simpleicons.org/axios/white?viewbox=auto"
+                                     alt="Axios Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#F9DC3E] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Babel Internacionalização">
+                                <img src="https://cdn.simpleicons.org/babel/white?viewbox=auto"
+                                     alt="Babel Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#0B996E] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Brevo Email">
+                                <img src="https://cdn.simpleicons.org/brevo/white?viewbox=auto"
+                                     alt="Brevo Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#000000] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Express.js API">
+                                <img src="https://cdn.simpleicons.org/express/white?viewbox=auto"
+                                     alt="Express Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#BF0000] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Filezilla FTP">
+                                <img src="https://cdn.simpleicons.org/filezilla/white?viewbox=auto"
+                                     alt="Filezilla Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#FCC624] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Linux">
+                                <img src="https://cdn.simpleicons.org/linux/white?viewbox=auto"
+                                     alt="Linux Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#22D172] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Mailtrap">
+                                <img src="https://cdn.simpleicons.org/mailtrap/white?viewbox=auto"
+                                     alt="Mailtrap Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+                        <!--
+                            <li class="w-15 h-15 bg-[#000000] flex items-center justify-center rounded-full
+                                    hover:opacity-90 hover:scale-110 transition-all duration-500 delay-20"
+                                title="Next Framework">
+                                <img src="https://cdn.simpleicons.org/nextdotjs/white?viewbox=auto"
+                                     alt="Next Logo" class="w-10 h-10"/>
+                            </li>
+                        -->
+
+                    </ul>
+                </div>
+            </section>
+            <section id="project-div" class="md:mx-28">
+                <!--Projetos-->
+                <h2 id="projects" class="text-5xl font-[Parisienne] font-bold mb-15 text-center">
+                    <span class="block text-xl font-normal -mb-2">Principais</span>
+                    <span class="border-b-2 border-orange-200 dark:border-stone-700 px-5 transition-color duration-700">Projetos</span>
+                </h2>
+                <div class="grid md:grid-cols-6 gap-2">
+                    <div class="md:col-span-3 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/my-cafe" target="_blank">
+                            <div class="rounded-3xl min-h-80 bg-cover bg-center overflow-hidden flex"
+                                style="background-image: url('assets/thumbnails/mycafe.jpg')">
+                                <img src="https://raw.githubusercontent.com/allan-rcos/my-cafe/refs/heads/main/docs/mycafe-optimized.gif"
+                                     alt="Projeto MyCafe"
+                                     class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-8 my-10">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">MyCafé</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#777BB4] hover:text-[#777BB4]">PHP</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#EF4223] hover:text-[#EF4223]">CodeIgniter</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#7952B3] hover:text-[#7952B3]">Bootstrap</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#003545] hover:text-[#003545]">MariaDB</span>
+                                </p>
+                                <p class="font-md text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Website abrangente para cafeteria,
+                                    seguindo a arquitetura MVC, e empregando.
+                                    A plataforma oferece uma experiência
+                                    completa, incluindo página inicial e loja,
+                                    carrinho de compras, gestão de produtos e
+                                    categorias, e um sistema de pedidos e
+                                    entregas eficiente. Possui funcionalidades de
+                                    login e registro de usuários, com a opção de
+                                    upload de fotos de perfil. Um dashboard
+                                    administrativo permite o controle total do
+                                    negócio.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="md:col-span-3 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/agendamd" target="_blank">
+                            <div class="rounded-3xl min-h-80 bg-cover bg-center overflow-hidden flex"
+                                    style="background-image: url('assets/thumbnails/agendamd.jpg')">
+                                <img src="https://raw.githubusercontent.com/allan-rcos/agendamd/refs/heads/main/assets/agendamd.gif"
+                                     alt="Projeto AgendaMD"
+                                     class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-8 my-10">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">AgendaMD</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#3776AB] hover:text-[#3776AB]">Python</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#757575] hover:text-[#757575]">Kivy</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#013243] hover:text-[#013243]">NumPy</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#F9DC3E] hover:text-[#F9DC3E]">PyBabel</span>
+                                </p>
+                                <p class="font-md text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Este projeto é um aplicativo de agenda nativo
+                                    para Windows. A aplicação incorpora Material
+                                    Design, tema escuro, e permite a criação e
+                                    gerenciamento de tarefas e eventos com
+                                    visualizações em calendário e lista. Conta com
+                                    suporte a múltiplas linguagens via Multilingual
+                                    internationalization com alteração dinâmica.
+                                    O desenvolvimento foi aprimorado pela
+                                    comunicação com desenvolvedores
+                                    experientes em comunidades online (Discord),
+                                    evidenciando colaboração e busca por melhores
+                                    práticas.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/hello-server" target="_blank">
+                            <div class="rounded-3xl min-h-52 bg-cover bg-center overflow-hidden flex flex-col items-center justify-center"
+                                    style="background-image: url('assets/thumbnails/hello-server.PNG')">
+                                <span class="material-icons opacity-0 group-hover:opacity-50 transition-opacity duration-1000 easy-in-out"
+                                    style="font-size: 4.5rem;">&#xf1b7;</span>
+                                <span class="font-[Ubuntu Mono] font-bold opacity-0 group-hover:opacity-50 transition-opacity duration-1000 easy-in-out">API</span>
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-5 my-7">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">Hello API</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#777BB4] hover:text-[#777BB4]">PHP</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#4479A1] hover:text-[#4479A1]">MySQL</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#A81D33] hover:text-[#A81D33]">Debian</span>
+                                </p>
+                                <p class="text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Este projeto envolve a criação de uma API de aplicativo de mensagens instantâneas.
+                                    A segurança é garantida por JSON Web Tokens (JWT) para autenticação e por um
+                                    sistema de verificação de conta por email. Uma experiência crucial foi a implantação
+                                    e operação em um servidor Debian na indigoOcean, proporcionando conhecimentos práticos
+                                    em gerenciamento de servidores, configurações de ambiente de produção e troubleshooting.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/resume-cv" target="_blank">
+                            <div class="rounded-3xl min-h-52 bg-cover bg-center overflow-hidden flex"
+                                style="background-image: url('assets/thumbnails/resumecv.jpg')">
+                                <img src="https://raw.githubusercontent.com/allan-rcos/resume-cv/refs/heads/main/docs/gifs/resumecv.gif"
+                                     alt="Projeto ResumeCV"
+                                     class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-5 my-7">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">ResumeCV</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#777BB4] hover:text-[#777BB4]">PHP</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#FF2D20] hover:text-[#FF2D20]">Laravel</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#06B6D4] hover:text-[#06B6D4]">TailwindCss</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#0769AD] hover:text-[#0769AD]">JQuery</span>
+                                    <!--<span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#8BC0D0] hover:text-[#8BC0D0]">Alpine</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#003545] hover:text-[#003545]">MariaDB</span>-->
+                                </p>
+                                <p class="text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Uma plataforma web para criação de sites portfólio e currículos online altamente personalizáveis.
+                                    Sua página pública e landing page usam Blade (MVC). Seu Dashboard de usuário emprega a
+                                    arquitetura Cliente-Servidor com Laravel
+                                    Sanctum para controlar as APIs. O gerenciamento de usuários é robusto, via Laravel Spatie.
+                                    Um diagrama de classes na documentação detalha a arquitetura.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/sistema-de-vendas" target="_blank">
+                            <div class="rounded-3xl min-h-52 bg-cover bg-center overflow-hidden flex"
+                                style="background-image: url('assets/thumbnails/sistema-de-vendas.jpg')">
+                                <img src="https://raw.githubusercontent.com/allan-rcos/sistema-de-vendas/refs/heads/master/assets/sistema-de-vendas.gif"
+                                     alt="Projeto Sistema de Vendas"
+                                     class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-5 my-7">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">Sistema de Vendas</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#777BB4] hover:text-[#777BB4]">PHP</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#000000] hover:text-[#000000]">Symfony</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#06B6D4] hover:text-[#06B6D4]">TailwindCss</span>
+                                </p>
+                                <p class="text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Este projeto consiste em um Sistema de Vendas, desenvolvido como uma
+                                    aplicação web CRUD (Create, Read, Update, Delete) com foco no gerenciamento de
+                                    pedidos, produtos e tipos de produto. O sistema incorpora funcionalidades de login
+                                    e uma área administrativa intuitiva que permite a alteração dinâmica de todos os
+                                    dados do negócio.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="mx-10 md:mx-36">
+                <!--Educação-->
+                <h2 id="education" class="text-5xl font-[Parisienne] font-bold mb-15 text-center">
+                    <span class="border-b-2 border-orange-200 dark:border-stone-700 px-5 transition-color duration-700">Escolaridade</span>
+                </h2>
+                <div class="flex flex-col md:flex-row items-center justify-around">
+                    <div class="flex flex-col justify-between gap-4 md:w-1/2">
+                        <div class="min-h-32 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-3xl relative flex flex-col md:flex-row items-center py-10 md:py-0 px-5 gap-5
+                                transition-all duration-500 easy-in-out group shadow-md hover:shadow-xl">
+                            <p class="text-center mt-3 text-sm font-[Ubuntu-Mono] absolute -translate-x-1/2 start-1/2 top-0">
+                                <span class="text-indigo-300 dark:text-indigo-700 group-hover:text-indigo-500 font-bold dark:font-normal px-1 border-1 rounded
+                                    transition-color duration-500 easy-in-out">2024</span>
+                            </p>
+                            <a href="https://institutomix.com.br/cursos-interativos" target="_blank">
+                                <div class="h-20 w-20 bg-center bg-cover bg-white rounded-full
+                                hover:scale-110 transition-properties duration-500"
+                                     style="background-image: url('https://institutomix.com.br/favicon.png')"></div>
+                            </a>
+                            <div>
+                                <h3 class="text-2xl font-[Parisienne] mt-1">Profissionalizante</h3>
+                                <p>Programador Full: Web e Mobile</p>
+                                <p class="text-xs italic mt-1">Instituto Mix de Profissões</p>
+                            </div>
+                        </div>
+                        <div class="min-h-32 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-3xl relative flex flex flex-col md:flex-row items-center py-10 md:py-0 px-5 gap-5
+                                transition-all duration-500 easy-in-out group shadow-md hover:shadow-xl">
+                            <p class="text-center mt-3 text-sm font-[Ubuntu-Mono] absolute -translate-x-1/2 start-1/2 top-0">
+                                <span class="text-indigo-300 dark:text-indigo-700 group-hover:text-indigo-500 font-bold dark:font-normal px-1 border-1 rounded
+                                    transition-color duration-500 easy-in-out">2025 - Atualmente</span>
+                            </p>
+                            <a href="https://www.uninter.com/cursos-tecnicos-e-profissionalizantes/tecnico-em-desenvolvimento-de-sistemas/" target="_blank">
+                                <div class="h-20 w-20 bg-center bg-contain rounded-full bg-white
+                                    hover:scale-110 transition-properties duration-500"
+                                    style="background-image: url('https://www.uninter.com/wp-content/themes/uninter/assets/images/favicon.png')"
+                                ></div>
+                            </a>
+                            <div>
+                                <h3 class="text-2xl font-[Parisienne] mt-1">Técnico</h3>
+                                <p>Desenvolvimento de Sistemas</p>
+                                <p class="text-xs italic mt-1">Centro Universitário Internacional - Uninter</p>
+                            </div>
+                        </div>
+                        <div class="min-h-32 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-3xl relative flex flex flex-col md:flex-row items-center py-10 md:py-0 px-5 gap-5
+                                transition-all duration-500 easy-in-out group shadow-md hover:shadow-xl">
+                            <p class="text-center mt-3 text-sm font-[Ubuntu-Mono] absolute -translate-x-1/2 start-1/2 top-0">
+                                <span class="text-indigo-300 dark:text-indigo-700 group-hover:text-indigo-500 font-bold dark:font-normal px-1 border-1 rounded
+                                    transition-color duration-500 easy-in-out">2025 - Atualmente</span>
+                            </p>
+                            <a href="https://www.uninter.com/graduacao/a-distancia/bacharelado-em-engenharia-de-software/" target="_blank">
+                                <div class="h-20 w-20 bg-center bg-contain rounded-full bg-white
+                                    hover:scale-110 transition-properties duration-500"
+                                    style="background-image: url('https://www.uninter.com/wp-content/themes/uninter/assets/images/favicon.png')"></div>
+                            </a>
+                            <div>
+                                <h3 class="text-2xl font-[Parisienne] mt-1">Bacharelado</h3>
+                                <p>Engenharia de Software <span class="text-sm align-text-top">(Bolsista)</span></p>
+                                <p class="text-xs italic mt-1">Centro Universitário Internacional - Uninter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5 md:mb-0 md:ml-20 w-56 h-56 bg-center bg-contain bg-no-repeat
+                            animate-rise order-first md:order-last" style="background-image: url('assets/images/education.png')"></div>
+                </div>
+            </section>
+            <footer class="border-t-1 border-gray-100 dark:border-gray-900 text-center text-gray-400 dark:text-gray-600 font-light py-3 transition-color duration-700">
+                &copy; Portfólio Desenvolvido por Ricardo Állan
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
