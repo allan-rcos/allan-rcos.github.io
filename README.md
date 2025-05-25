@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-Esse é um site portfólio feito utilizando Material Design como base. Possui total responsividade e é totalmente estático. Feito com TailwindCSS e icones da Simple Icons, IonIcons e Material Icons.
+Esse é um site portfólio feito utilizando Material Design como base. É totalmente responsividade e estático. Feito com TailwindCSS e icones da Simple Icons, IonIcons e Material Icons.
 
 ## 💻 Demonstração
 ![Versão Desktop](https://raw.githubusercontent.com/allan-rcos/allan-rcos.github.io/74ae438fade2e8d8c18400911065168e92fb26ae/assets/demo/desktop.gif)
