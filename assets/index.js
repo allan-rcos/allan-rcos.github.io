@@ -101,8 +101,8 @@ function projectCursor(cursor) {
 
     if ((current === 0 && cursor === PREVIOUS) || (current === max && cursor === NEXT)) return;
     if(cursor !== NEXT && cursor !== PREVIOUS) console.error('unknown-cursor');
-    document.getElementById('project-previous').style.opacity = 'inherit';
-    document.getElementById('project-next').style.opacity = 'inherit';
+    document.getElementById('project-previous').style.opacity = '';
+    document.getElementById('project-next').style.opacity = '';
     projects[current].classList.remove('scale-100');
     projects[current].classList.add('scale-80');
     projects[current].classList.remove('left-1/2');
