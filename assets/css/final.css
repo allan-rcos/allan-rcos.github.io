@@ -1987,6 +1987,12 @@
       background-color: var(--color-stone-900);
     }
   }
+  .dark\:from-stone-900 {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      --tw-gradient-from: var(--color-stone-900);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
   .dark\:font-normal {
     &:where([data-theme=dark], [data-theme=dark] *) {
       --tw-font-weight: var(--font-weight-normal);
