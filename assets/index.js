@@ -78,7 +78,7 @@ document.getElementById('projects-button').addEventListener('click', () => scrol
 document.getElementById('education-button').addEventListener('click', () => scrollTo('education'));
 document.getElementById('return').addEventListener('click', hiddenMenu)
 document.getElementById('skills-list').scroll({left: 50})
-window.setInterval(setMenuTimeOut, 10)
+window.setInterval(setMenuTimeOut, 20)
 skillList.addEventListener('touchend', () => paused = !paused)
 skillList.addEventListener('mouseover', () => { paused = true });
 skillList.addEventListener('mouseout', () => { paused = false })
