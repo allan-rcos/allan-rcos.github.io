@@ -99,7 +99,7 @@ function projectCursor(cursor) {
         signal = cursor === NEXT ? 1 : -1;
     }
 
-    if ((current === 0 && cursor === PREVIOUS) || (current === max && cursor === NEXT)) return;
+    if ((current === 0 && cursor === PREVIOUS) || (current === max && cursor === NEXT)) return skip_next = false;
     if(cursor !== NEXT && cursor !== PREVIOUS) console.error('unknown-cursor');
     document.getElementById('project-previous').style.opacity = '';
     document.getElementById('project-next').style.opacity = '';
