@@ -1628,6 +1628,11 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
+  .md\:mx-5 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 5);
+    }
+  }
   .md\:mx-28 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 28);
@@ -1641,6 +1646,11 @@
   .md\:mx-auto {
     @media (width >= 48rem) {
       margin-inline: auto;
+    }
+  }
+  .md\:my-7 {
+    @media (width >= 48rem) {
+      margin-block: calc(var(--spacing) * 7);
     }
   }
   .md\:mt-0 {
