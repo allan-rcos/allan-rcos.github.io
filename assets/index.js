@@ -52,6 +52,23 @@ function scrollTo(id) {
         behavior: 'smooth'
     });
 }
+const skillList = document.getElementById('skills-list');
+let scrolled_to_end = false;
+let paused = false;
+function setMenuTimeOut() {
+    if(paused) return;
+    let scroll_y = skillList.scrollLeft + 1;
+    if (scroll_y < (skillList.scrollWidth - skillList.offsetWidth)) {
+        if (!scrolled_to_end)
+            skillList.scroll({left: scroll_y});
+        else if (scroll_y === 1)
+            scrolled_to_end = false
+    }
+    else {
+        scrolled_to_end = true
+        skillList.scroll({left: 0, behavior: 'smooth'});
+    }
+}
 
 document.getElementById('menu').addEventListener('click', hiddenMenu);
 document.getElementById('home-button').addEventListener('click', scrollToTop);
@@ -60,3 +77,8 @@ document.getElementById('skills-button').addEventListener('click', () => scrollT
 document.getElementById('projects-button').addEventListener('click', () => scrollTo('projects'));
 document.getElementById('education-button').addEventListener('click', () => scrollTo('education'));
 document.getElementById('return').addEventListener('click', hiddenMenu)
+document.getElementById('skills-list').scroll({left: 50})
+window.setInterval(setMenuTimeOut, 10)
+skillList.addEventListener('touchend', () => paused = !paused)
+skillList.addEventListener('mouseover', () => { paused = true });
+skillList.addEventListener('mouseout', () => { paused = false })
