@@ -52,6 +52,7 @@ function scrollTo(id) {
         behavior: 'smooth'
     });
 }
+
 const skillList = document.getElementById('skills-list');
 let scrolled_to_end = false;
 let paused = false;
@@ -70,6 +71,53 @@ function setMenuTimeOut() {
     }
 }
 
+const projects = document.querySelectorAll('#project-div div div div.inline-block');
+const max = projects.length - 1;
+const NEXT = 'next';
+const PREVIOUS = 'previous';
+let current = 0;
+let signal = 1;
+let project_paused = false;
+let skip_next = false;
+function projectCursor(cursor) {
+    if(project_paused) return;
+    if (!cursor) {
+        if(skip_next) {
+            skip_next = false;
+            return;
+        }
+        if(current === max)
+            signal = -1
+        else if(current === 0)
+            signal = 1
+        if (signal === 1)
+            cursor = NEXT
+        else if (signal === -1)
+            cursor = PREVIOUS
+    } else {
+        skip_next = true;
+        signal = cursor === NEXT ? 1 : -1;
+    }
+
+    if ((current === 0 && cursor === PREVIOUS) || (current === max && cursor === NEXT)) return;
+    if(cursor !== NEXT && cursor !== PREVIOUS) console.error('unknown-cursor');
+    document.getElementById('project-previous').style.opacity = 'inherit';
+    document.getElementById('project-next').style.opacity = 'inherit';
+    projects[current].classList.remove('scale-100');
+    projects[current].classList.add('scale-80');
+    projects[current].classList.remove('left-1/2');
+    projects[current].classList.add(cursor === NEXT ? '-left-1/2' : 'left-[150%]');
+    current += cursor === NEXT ? 1 : -1;
+    projects[current].classList.remove('scale-80');
+    projects[current].classList.add('scale-100');
+    projects[current].classList.remove(cursor === NEXT ? 'left-[150%]' : '-left-1/2');
+    projects[current].classList.add('left-1/2');
+    if (current === 0)
+        document.getElementById('project-previous').style.opacity = '30%';
+    else if (current === max)
+        document.getElementById('project-next').style.opacity = '30%';
+}
+
 document.getElementById('menu').addEventListener('click', hiddenMenu);
 document.getElementById('home-button').addEventListener('click', scrollToTop);
 document.getElementById('about-me-button').addEventListener('click', () => scrollTo('about-me'));
@@ -81,4 +129,11 @@ document.getElementById('skills-list').scroll({left: 50})
 window.setInterval(setMenuTimeOut, 20)
 skillList.addEventListener('touchend', () => paused = !paused)
 skillList.addEventListener('mouseover', () => { paused = true });
-skillList.addEventListener('mouseout', () => { paused = false })
+skillList.addEventListener('mouseout', () => { paused = false });
+document.getElementById('project-previous').style.opacity = '30%';
+document.getElementById('project-previous').addEventListener('click', () => projectCursor(PREVIOUS));
+document.getElementById('project-next').addEventListener('click', () => projectCursor(NEXT))
+document.getElementById('project-div').addEventListener('touchstart', () => project_paused = true);
+document.addEventListener('touchend', () => project_paused = false);
+
+const project_interval = window.setInterval(() => projectCursor(), 5000)

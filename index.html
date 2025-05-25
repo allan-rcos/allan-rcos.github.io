@@ -452,189 +452,193 @@
                 <span class="block text-xl font-normal -mb-2">Principais</span>
                 <span class="border-b-2 border-orange-200 dark:border-stone-700 px-5 transition-color duration-700">Projetos</span>
             </h2>
-            <div class="grid md:grid-cols-6 gap-2">
-                <div class="md:col-span-3 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
-                    <a href="https://github.com/allan-rcos/my-cafe" target="_blank">
-                        <div class="rounded-3xl min-h-80 bg-cover bg-center overflow-hidden flex"
-                            style="background-image: url('assets/thumbnails/mycafe.jpg')">
-                            <img src="https://raw.githubusercontent.com/allan-rcos/my-cafe/refs/heads/main/docs/mycafe-optimized.gif"
-                                 alt="Projeto MyCafe"
-                                 class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
-                        </div>
-                        <div class="font-[Ubuntu-Mono] mx-8 my-10">
-                            <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">MyCafé</h3>
-                            <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+            <div class="relative min-h-screen md:min-h-none overflow-hidden">
+                <button id="project-previous" class="md:hidden absolute size-10 opacity-80 -translate-y-1/2 top-1/2 left-5 bg-orange-100 dark:bg-stone-800 rounded-full z-20 transition-color duration-700"><span class="material-icons !text-4xl">&#xe5cb;</span></button>
+                <button id="project-next" class="md:hidden absolute size-10 opacity-80 -translate-y-1/2 top-1/2 right-5 bg-orange-100 dark:bg-stone-800 rounded-full z-20 transition-color duration-700"><span class="material-icons !text-4xl">&#xe5cc;</span></button>
+                <div class="text-nowrap md:grid md:grid-cols-6 gap-2 z-10">
+                    <div class="inline-block absolute -translate-1/2 md:translate-none top-1/2 left-1/2 md:static scale-100 md:scale-100 w-xs md:w-auto text-wrap md:max-w-screen md:col-span-3 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-all duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/my-cafe" target="_blank">
+                            <div class="rounded-3xl min-h-40 md:min-h-80 bg-cover bg-center overflow-hidden flex"
+                                 style="background-image: url('assets/thumbnails/mycafe.jpg')">
+                                <img src="https://raw.githubusercontent.com/allan-rcos/my-cafe/refs/heads/main/docs/mycafe-optimized.gif"
+                                     alt="Projeto MyCafe"
+                                     class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-8 my-10">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">MyCafé</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
                                 <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#777BB4] hover:text-[#777BB4]">PHP</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#EF4223] hover:text-[#EF4223]">CodeIgniter</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#7952B3] hover:text-[#7952B3]">Bootstrap</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#003545] hover:text-[#003545]">MariaDB</span>
-                            </p>
-                            <p class="font-md text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
-                                Website abrangente para cafeteria,
-                                seguindo a arquitetura MVC, e empregando.
-                                A plataforma oferece uma experiência
-                                completa, incluindo página inicial e loja,
-                                carrinho de compras, gestão de produtos e
-                                categorias, e um sistema de pedidos e
-                                entregas eficiente. Possui funcionalidades de
-                                login e registro de usuários, com a opção de
-                                upload de fotos de perfil. Um dashboard
-                                administrativo permite o controle total do
-                                negócio.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="md:col-span-3 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
-                    <a href="https://github.com/allan-rcos/agendamd" target="_blank">
-                        <div class="rounded-3xl min-h-80 bg-cover bg-center overflow-hidden flex"
-                                style="background-image: url('assets/thumbnails/agendamd.jpg')">
-                            <img src="https://raw.githubusercontent.com/allan-rcos/agendamd/refs/heads/main/assets/agendamd.gif"
-                                 alt="Projeto AgendaMD"
-                                 class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
-                        </div>
-                        <div class="font-[Ubuntu-Mono] mx-8 my-10">
-                            <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">AgendaMD</h3>
-                            <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                </p>
+                                <p class="text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Website abrangente para cafeteria,
+                                    seguindo a arquitetura MVC, e empregando.
+                                    A plataforma oferece uma experiência
+                                    completa, incluindo página inicial e loja,
+                                    carrinho de compras, gestão de produtos e
+                                    categorias, e um sistema de pedidos e
+                                    entregas eficiente. Possui funcionalidades de
+                                    login e registro de usuários, com a opção de
+                                    upload de fotos de perfil. Um dashboard
+                                    administrativo permite o controle total do
+                                    negócio.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="inline-block absolute -translate-1/2 md:translate-none top-1/2 left-[150%] md:static scale-80 md:scale-100 w-xs md:w-auto text-wrap md:max-w-screen md:col-span-3 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-all duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/agendamd" target="_blank">
+                            <div class="rounded-3xl min-h-40 md:min-h-80 bg-cover bg-center overflow-hidden flex"
+                                 style="background-image: url('assets/thumbnails/agendamd.jpg')">
+                                <img src="https://raw.githubusercontent.com/allan-rcos/agendamd/refs/heads/main/assets/agendamd.gif"
+                                     alt="Projeto AgendaMD"
+                                     class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-8 my-10">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">AgendaMD</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
                                 <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#3776AB] hover:text-[#3776AB]">Python</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#757575] hover:text-[#757575]">Kivy</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#013243] hover:text-[#013243]">NumPy</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#F9DC3E] hover:text-[#F9DC3E]">PyBabel</span>
-                            </p>
-                            <p class="font-md text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
-                                Este projeto é um aplicativo de agenda nativo
-                                para Windows. A aplicação incorpora Material
-                                Design, tema escuro, e permite a criação e
-                                gerenciamento de tarefas e eventos com
-                                visualizações em calendário e lista. Conta com
-                                suporte a múltiplas linguagens via Multilingual
-                                internationalization com alteração dinâmica.
-                                O desenvolvimento foi aprimorado pela
-                                comunicação com desenvolvedores
-                                experientes em comunidades online (Discord),
-                                evidenciando colaboração e busca por melhores
-                                práticas.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
-                    <a href="https://github.com/allan-rcos/hello-server" target="_blank">
-                        <div class="rounded-3xl min-h-52 bg-cover bg-center overflow-hidden flex flex-col items-center justify-center"
-                                style="background-image: url('assets/thumbnails/hello-server.PNG')">
+                                </p>
+                                <p class="text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Este projeto é um aplicativo de agenda nativo
+                                    para Windows. A aplicação incorpora Material
+                                    Design, tema escuro, e permite a criação e
+                                    gerenciamento de tarefas e eventos com
+                                    visualizações em calendário e lista. Conta com
+                                    suporte a múltiplas linguagens via Multilingual
+                                    internationalization com alteração dinâmica.
+                                    O desenvolvimento foi aprimorado pela
+                                    comunicação com desenvolvedores
+                                    experientes em comunidades online (Discord),
+                                    evidenciando colaboração e busca por melhores
+                                    práticas.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="inline-block absolute -translate-1/2 md:translate-none top-1/2 left-[150%] md:static scale-80 md:scale-100 w-xs md:w-auto text-wrap md:max-w-screen md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-all duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/hello-server" target="_blank">
+                            <div class="rounded-3xl min-h-40 md:min-h-52 bg-cover bg-center overflow-hidden flex flex-col items-center justify-center"
+                                 style="background-image: url('assets/thumbnails/hello-server.PNG')">
                             <span class="material-icons opacity-0 group-hover:opacity-50 transition-opacity duration-1000 easy-in-out"
-                                style="font-size: 4.5rem;">&#xf1b7;</span>
-                            <span class="font-[Ubuntu Mono] font-bold opacity-0 group-hover:opacity-50 transition-opacity duration-1000 easy-in-out">API</span>
-                        </div>
-                        <div class="font-[Ubuntu-Mono] mx-5 my-7">
-                            <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">Hello API</h3>
-                            <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                  style="font-size: 4.5rem;">&#xf1b7;</span>
+                                <span class="font-[Ubuntu Mono] font-bold opacity-0 group-hover:opacity-50 transition-opacity duration-1000 easy-in-out">API</span>
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-5 my-7">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">Hello API</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
                                 <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#777BB4] hover:text-[#777BB4]">PHP</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#4479A1] hover:text-[#4479A1]">MySQL</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#A81D33] hover:text-[#A81D33]">Debian</span>
-                            </p>
-                            <p class="text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
-                                Este projeto envolve a criação de uma API de aplicativo de mensagens instantâneas.
-                                A segurança é garantida por JSON Web Tokens (JWT) para autenticação e por um
-                                sistema de verificação de conta por email. Uma experiência crucial foi a implantação
-                                e operação em um servidor Debian na indigoOcean, proporcionando conhecimentos práticos
-                                em gerenciamento de servidores, configurações de ambiente de produção e troubleshooting.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
-                    <a href="https://github.com/allan-rcos/resume-cv" target="_blank">
-                        <div class="rounded-3xl min-h-52 bg-cover bg-center overflow-hidden flex"
-                            style="background-image: url('assets/thumbnails/resumecv.jpg')">
-                            <img src="https://raw.githubusercontent.com/allan-rcos/resume-cv/refs/heads/main/docs/gifs/resumecv.gif"
-                                 alt="Projeto ResumeCV"
-                                 class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
-                        </div>
-                        <div class="font-[Ubuntu-Mono] mx-5 my-7">
-                            <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">ResumeCV</h3>
-                            <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                </p>
+                                <p class="md:text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Este projeto envolve a criação de uma API de aplicativo de mensagens instantâneas.
+                                    A segurança é garantida por JSON Web Tokens (JWT) para autenticação e por um
+                                    sistema de verificação de conta por email. Uma experiência crucial foi a implantação
+                                    e operação em um servidor Debian na indigoOcean, proporcionando conhecimentos práticos
+                                    em gerenciamento de servidores, configurações de ambiente de produção e troubleshooting.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="inline-block absolute -translate-1/2 md:translate-none top-1/2 left-[150%] md:static scale-80 md:scale-100 w-xs md:w-auto text-wrap md:max-w-screen md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-all duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/resume-cv" target="_blank">
+                            <div class="rounded-3xl min-h-40 md:min-h-52 bg-cover bg-center overflow-hidden flex"
+                                 style="background-image: url('assets/thumbnails/resumecv.jpg')">
+                                <img src="https://raw.githubusercontent.com/allan-rcos/resume-cv/refs/heads/main/docs/gifs/resumecv.gif"
+                                     alt="Projeto ResumeCV"
+                                     class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-5 my-7">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">ResumeCV</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
                                 <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#777BB4] hover:text-[#777BB4]">PHP</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#FF2D20] hover:text-[#FF2D20]">Laravel</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#06B6D4] hover:text-[#06B6D4]">TailwindCss</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#0769AD] hover:text-[#0769AD]">JQuery</span>
-                                <!--<span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
-                                    transition-color duration-300 easy-in-out
-                                    hover:border-[#8BC0D0] hover:text-[#8BC0D0]">Alpine</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
-                                    transition-color duration-300 easy-in-out
-                                    hover:border-[#003545] hover:text-[#003545]">MariaDB</span>-->
-                            </p>
-                            <p class="text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
-                                Uma plataforma web para criação de sites portfólio e currículos online altamente personalizáveis.
-                                Sua página pública e landing page usam Blade (MVC). Seu Dashboard de usuário emprega a
-                                arquitetura Cliente-Servidor com Laravel
-                                Sanctum para controlar as APIs. O gerenciamento de usuários é robusto, via Laravel Spatie.
-                                Um diagrama de classes na documentação detalha a arquitetura.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-color duration-500 easy-in-out">
-                    <a href="https://github.com/allan-rcos/sistema-de-vendas" target="_blank">
-                        <div class="rounded-3xl min-h-52 bg-cover bg-center overflow-hidden flex"
-                            style="background-image: url('assets/thumbnails/sistema-de-vendas.jpg')">
-                            <img src="https://raw.githubusercontent.com/allan-rcos/sistema-de-vendas/refs/heads/master/assets/sistema-de-vendas.gif"
-                                 alt="Projeto Sistema de Vendas"
-                                 class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
-                        </div>
-                        <div class="font-[Ubuntu-Mono] mx-5 my-7">
-                            <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">Sistema de Vendas</h3>
-                            <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
+                                    <!--<span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#8BC0D0] hover:text-[#8BC0D0]">Alpine</span>
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                        transition-color duration-300 easy-in-out
+                                        hover:border-[#003545] hover:text-[#003545]">MariaDB</span>-->
+                                </p>
+                                <p class="md:text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Uma plataforma web para criação de sites portfólio e currículos online altamente personalizáveis.
+                                    Sua página pública e landing page usam Blade (MVC). Seu Dashboard de usuário emprega a
+                                    arquitetura Cliente-Servidor com Laravel
+                                    Sanctum para controlar as APIs. O gerenciamento de usuários é robusto, via Laravel Spatie.
+                                    Um diagrama de classes na documentação detalha a arquitetura.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="inline-block absolute -translate-1/2 md:translate-none top-1/2 left-[150%] md:static scale-80 md:scale-100 w-xs md:w-auto text-wrap md:max-w-screen md:col-span-2 bg-orange-50 dark:bg-stone-800 hover:bg-indigo-50 dark:hover:bg-slate-900 rounded-4xl group transition-all duration-500 easy-in-out">
+                        <a href="https://github.com/allan-rcos/sistema-de-vendas" target="_blank">
+                            <div class="rounded-3xl min-h-40 md:min-h-52 bg-cover bg-center overflow-hidden flex"
+                                 style="background-image: url('assets/thumbnails/sistema-de-vendas.jpg')">
+                                <img src="https://raw.githubusercontent.com/allan-rcos/sistema-de-vendas/refs/heads/master/assets/sistema-de-vendas.gif"
+                                     alt="Projeto Sistema de Vendas"
+                                     class="flex-1 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 easy-in-out">
+                            </div>
+                            <div class="font-[Ubuntu-Mono] mx-5 my-7">
+                                <h3 class="text-2xl font-[Parisienne] font-bold mb-3 ml-2">Sistema de Vendas</h3>
+                                <p class="my-2 text-xs text-gray-700 dark:text-gray-300 transition-color duration-700">
                                 <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#777BB4] hover:text-[#777BB4]">PHP</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#000000] hover:text-[#000000]">Symfony</span>
-                                <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
+                                    <span class="px-2 border-2 border-orange-100 dark:border-stone-700 group-hover:border-indigo-100 dark:group-hover:border-slate-800 rounded cursor-default
                                     transition-color duration-300 easy-in-out
                                     hover:border-[#06B6D4] hover:text-[#06B6D4]">TailwindCss</span>
-                            </p>
-                            <p class="text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
-                                Este projeto consiste em um Sistema de Vendas, desenvolvido como uma
-                                aplicação web CRUD (Create, Read, Update, Delete) com foco no gerenciamento de
-                                pedidos, produtos e tipos de produto. O sistema incorpora funcionalidades de login
-                                e uma área administrativa intuitiva que permite a alteração dinâmica de todos os
-                                dados do negócio.
-                            </p>
-                        </div>
-                    </a>
+                                </p>
+                                <p class="md:text-sm text-justify text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-color duration-300 easy-in-out">
+                                    Este projeto consiste em um Sistema de Vendas, desenvolvido como uma
+                                    aplicação web CRUD (Create, Read, Update, Delete) com foco no gerenciamento de
+                                    pedidos, produtos e tipos de produto. O sistema incorpora funcionalidades de login
+                                    e uma área administrativa intuitiva que permite a alteração dinâmica de todos os
+                                    dados do negócio.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
