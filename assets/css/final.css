@@ -291,6 +291,9 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
   .left-5 {
     left: calc(var(--spacing) * 5);
   }
